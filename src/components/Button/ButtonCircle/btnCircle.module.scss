@@ -1,0 +1,110 @@
+.tp-bg-circle {
+    height: 7.5vw;
+    width: 7.5vw;
+    border-radius: 50%;
+}
+.textWhite {
+    color: white;
+}
+
+//teal
+.bd-btn-circle-teal {
+    height: 9vw;
+    width: 9vw;
+    border-radius: 50%;
+    border: 5px solid #00e5e5;
+    &:hover {
+        border: 5px solid #00ffff;
+    }
+    &:hover .teal {
+        background-color: #00ffff;
+        color: rgb(54, 54, 54);
+    }
+    &:active {
+        border: 5px solid #00c8c8;
+    }
+    &:active .teal {
+        background-color: #00c8c8;
+        color: white;
+    }
+}
+
+.teal {
+    background-color: #00e5e5;
+}
+
+.bd-btn-circle-danger {
+    height: 9vw;
+    width: 9vw;
+    border-radius: 50%;
+    border: 5px solid #eb0000;
+    &:hover {
+        border: 5px solid #ff0000;
+    }
+    &:hover .danger {
+        background-color: #ff0000;
+        color: rgb(54, 54, 54);
+    }
+    &:active {
+        border: 5px solid #ce0000;
+    }
+    &:active .danger {
+        background-color: #ce0000;
+        color: white;
+    }
+}
+
+.danger {
+    background-color: #eb0000;
+}
+
+.bd-btn-circle-primary {
+    height: 9vw;
+    width: 9vw;
+    border-radius: 50%;
+    border: 5px solid #3693ff;
+    &:hover {
+        border: 5px solid #62a8f8;
+    }
+    &:hover .primary {
+        background-color: #62a8f8;
+        color: rgb(54, 54, 54);
+    }
+    &:active {
+        border: 5px solid #0f7fff;
+    }
+    &:active .primary {
+        background-color: #0f7fff;
+        color: white;
+    }
+}
+
+.primary {
+    background-color: #3693ff;
+}
+
+//warning
+.bd-btn-circle-warning {
+    height: 9vw;
+    width: 9vw;
+    border-radius: 50%;
+    border: 5px solid #ff7e35;
+    &:hover {
+        border: 5px solid #f8945a;
+    }
+    &:hover .warning {
+        background-color: #f8945a;
+        color: rgb(54, 54, 54);
+    }
+    &:active {
+        border: 5px solid #fb772b;
+    }
+    &:active .warning {
+        background-color: #fb772b;
+        color: white;
+    }
+}
+
+.warning {
+    background-color: #ff7e35;
+}

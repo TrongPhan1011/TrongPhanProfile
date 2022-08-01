@@ -1,0 +1,157 @@
+@import 'normalize.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Great+Vibes&family=Lobster&display=swap');
+
+:root {
+    --cl-1: rgba(0, 0, 0, 0.29);
+    --cl-2: rgba(0, 255, 255, 1);
+    --cl-3: rgba(255, 255, 255, 0);
+
+    --cl-4: rgba(255, 255, 255, 0.5);
+    --cl-5: rgba(255, 255, 255, 0.69);
+    --cl-6: rgba(0, 0, 0, 0.5);
+    --cl-7: rgba(28, 28, 28, 1);
+    --cl-8: rgba(0, 194, 255, 1);
+    --cl-9: rgba(255, 236, 63, 1);
+    --cl-10: rgba(229, 252, 252, 1);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    overflow: auto;
+}
+
+// Text
+.text-gradient {
+    background: -webkit-linear-gradient(var(--cl-2), var(--cl-4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tp-font-logo {
+    font-family: 'Anton', sans-serif;
+
+    font-weight: bold;
+}
+.tp-font-slogan {
+    font-family: 'Great Vibes', cursive;
+    line-height: 5rem;
+}
+
+.tp-text-title {
+    font-size: 4rem;
+    line-height: 5rem;
+    font-family: 'Great Vibes', cursive;
+}
+
+.tp-text-cyan {
+    color: var(--cl-2);
+}
+
+.tp-link-hover {
+    font-weight: 300;
+}
+.tp-link-hover:hover {
+    color: var(--cl-2);
+}
+
+.tp-fw-600 {
+    font-weight: 600;
+}
+
+// Background
+.tp-bg-dark {
+    background-color: var(--cl-1);
+}
+.tp-bg-light {
+    background-color: var(--cl-5);
+}
+.tp-bg-cyan-light {
+    background-color: var(--cl-10);
+}
+.tp-linnear {
+    background-image: linear-gradient(
+        -60deg,
+        rgba(252, 225, 208, 1) 30%,
+        rgba(255, 173, 214, 1) 55.7%,
+        rgba(162, 186, 245, 1) 81.8%
+    );
+    // background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.tp-bg-btn-teal {
+    background-color: #00e5e5;
+    &:hover {
+        background-color: #00ffff;
+    }
+    &:active {
+        background-color: #00c8c8;
+    }
+}
+
+// Input
+.tp-input {
+    outline: var(--cl-2);
+    caret-color: var(--cl-2);
+}
+
+// button
+
+.btn-hover:hover {
+    background-color: var(--cl-6);
+}
+
+.tp-btn-gradient {
+    background-image: linear-gradient(to right, var(--cl-7), var(--cl-8));
+    color: white;
+    border: 1px solid white;
+
+    &:hover {
+        background-image: linear-gradient(to right, var(--cl-8), var(--cl-2));
+        color: var(--cl-6);
+    }
+    &:active {
+        background-image: linear-gradient(to right, var(--cl-7), var(--cl-8));
+        color: white;
+    }
+}
+
+// line
+.tp-line {
+    height: 4px;
+    width: 50%;
+    background-image: linear-gradient(to right, var(--cl-7), var(--cl-8));
+    border-radius: 10px;
+}
+
+// position
+.tp-right {
+    right: 15%;
+}
+
+// height
+.tp-h-screen-50 {
+    height: 50vh;
+}
+
+.tp-h-screen-93 {
+    height: 93vh;
+}
+
+.tp-min-h-item {
+    min-height: 50px;
+}
