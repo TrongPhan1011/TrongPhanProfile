@@ -25,9 +25,9 @@ function Header() {
                 <Button to={config.routeConfig.gioiThieu} className={cx('tp-link-hover', 'text-white  p-5 ')}>
                     Giới thiệu
                 </Button>
-                <Button to={config.routeConfig.sanPham} className={cx('tp-link-hover', 'text-white  p-5 ')}>
+                {/* <Button to={config.routeConfig.sanPham} className={cx('tp-link-hover', 'text-white  p-5 ')}>
                     Sản phẩm
-                </Button>
+                </Button> */}
 
                 <Menu as="div" className=" relative inline-block text-left">
                     <div>
