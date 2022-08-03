@@ -38,29 +38,36 @@ function DichMa({ children, title }) {
     };
 
     return (
-        <div className={cx('flex justify-center h-full flex-col p-6 pl-12 pr-12')}>
-            <div className={cx('w-1/6 flex flex-col self-center items-center ')}>
+        <div className={cx('flex justify-center w-full h-full flex-col p-6 pl-12 pr-12')}>
+            <div className={cx('w-1/6 flex flex-col self-center items-center ', 'mobile-md:w-3/6')}>
                 <p className={cx('tp-fw-600', 'text-center text-4xl')}>{title}</p>
                 <div className={cx('tp-line', 'flex self-center mt-4 ')}></div>
             </div>
-            <div className={cx('flex w-full h-full mt-4')}>
-                <div className={cx('flex flex-col   justify-center w-1/2 pt-3 pb-3 pl-16 pr-16')}>
-                    <InputText
-                        title="Tải ảnh lên"
-                        type="file"
-                        display="d-none"
-                        id="file-upload"
-                        onChange={handlePreviewIMG}
-                    >
-                        <label
-                            htmlFor="file-upload"
-                            className={cx(
-                                'rounded-lg text-center border flex justify-center h-full p-2  outline-none border-gray-300 bg-cyan-100  hover:bg-cyan-200 active:bg-cyan-400',
-                            )}
+            <div className={cx('flex w-full h-full mt-4', '')}>
+                <div
+                    className={cx(
+                        'flex flex-col   justify-center  pt-3 pb-3 pl-16 pr-16',
+                        'mobile-md:w-full lg:w-1/2 mobile-md:pl-0 mobile-md:pr-0 ',
+                    )}
+                >
+                    <span className="w-full">
+                        <InputText
+                            title="Tải ảnh lên"
+                            type="file"
+                            display="d-none"
+                            id="file-upload"
+                            onChange={handlePreviewIMG}
                         >
-                            Chọn hình
-                        </label>
-                    </InputText>
+                            <label
+                                htmlFor="file-upload"
+                                className={cx(
+                                    'rounded-lg text-center border flex justify-center h-full p-2  outline-none border-gray-300 bg-cyan-100  hover:bg-cyan-200 active:bg-cyan-400',
+                                )}
+                            >
+                                Chọn hình
+                            </label>
+                        </InputText>
+                    </span>
 
                     {!!imgQR ? (
                         <div className={cx('w-full h-full flex justify-around items-center flex-col')}>
@@ -84,7 +91,12 @@ function DichMa({ children, title }) {
                         <></>
                     )}
                 </div>
-                <div className={cx('flex flex-col h-full justify-between w-1/2 pt-3 pb-3 pl-16 pr-16')}>
+                <div
+                    className={cx(
+                        'flex flex-col h-full justify-between w-1/2 pt-3 pb-3 pl-16 pr-16',
+                        'lg:w-1/2 mobile-md:w-full mobile-md:pr-0 mobile-md:pl-0',
+                    )}
+                >
                     <InputText
                         title="Thông điệp đã dịch"
                         tag="textarea"

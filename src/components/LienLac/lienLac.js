@@ -25,7 +25,12 @@ function LienLac() {
                 </h1>
                 <div className={cx('tp-line', 'flex self-center mt-5', 'mobile-md:mt-2')}></div>
             </div>
-            <div className={cx(' flex justify-end   h-1/6  ', 'lg:w-3/4 md:w-4/5 sm:w-3/4 md:mt-8 sm:mt-3')}>
+            <div
+                className={cx(
+                    ' flex justify-end   h-1/6  ',
+                    'lg:w-3/4 md:w-4/5 sm:w-3/4 md:mt-8 sm:mt-3 mobile-md:justify-center',
+                )}
+            >
                 <div className={cx('', 'flex items-center')}>
                     <a href={config.linkConfig.facebook} target="_blanks">
                         <img
@@ -61,7 +66,12 @@ function LienLac() {
                     ></div>
                 </div>
             </div>
-            <div className={cx(' flex justify-end h-1/6  ', 'lg:w-3/4 md:w-4/5 sm:w-3/4 md:mt-8 sm:mt-3')}>
+            <div
+                className={cx(
+                    ' flex justify-end h-1/6  ',
+                    'lg:w-3/4 md:w-4/5 sm:w-3/4 md:mt-8 sm:mt-3 mobile-md:justify-center',
+                )}
+            >
                 <div className={cx('', 'flex items-center')}>
                     <img
                         src={phoneIcon}
@@ -82,7 +92,12 @@ function LienLac() {
                     <div className={cx('', 'mt-3 w-full border-t-4 h-1/4 border-green-500 rounded-r-md ')}></div>
                 </div>
             </div>
-            <div className={cx(' flex justify-end h-1/6  ', 'lg:w-3/4 md:w-4/5 sm:w-3/4 md:mt-8 sm:mt-3')}>
+            <div
+                className={cx(
+                    ' flex justify-end h-1/6  ',
+                    'lg:w-3/4 md:w-4/5 sm:w-3/4 md:mt-8 sm:mt-3 mobile-md:justify-center',
+                )}
+            >
                 <div className={cx('', 'flex items-center')}>
                     <a href={config.linkConfig.git} target="_blanks">
                         <img
@@ -112,7 +127,12 @@ function LienLac() {
                     <div className={cx('', 'mt-3 w-full border-t-4 h-1/4 border-black rounded-r-md ')}></div>
                 </div>
             </div>
-            <div className={cx(' flex justify-end  h-1/6  ', 'lg:w-3/4 md:w-4/5 sm:w-3/4 md:mt-8 sm:mt-3')}>
+            <div
+                className={cx(
+                    ' flex justify-end  h-1/6  ',
+                    'lg:w-3/4 md:w-4/5 sm:w-3/4 md:mt-8 sm:mt-3 mobile-md:justify-center',
+                )}
+            >
                 <div className={cx('', 'flex items-center')}>
                     <img
                         src={mailIcon}

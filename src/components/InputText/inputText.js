@@ -15,7 +15,7 @@ function InputText({ children, ref, value, id, title, type, tag, width, height, 
 
     return (
         <>
-            <fieldset className={cx('border border-cyan-400 rounded-lg bg-white p-3 mb-4 ', maxHeight)}>
+            <fieldset className={cx('border border-cyan-400 rounded-lg bg-white w-full p-3 mb-4 ', maxHeight)}>
                 <legend className="ml-7 -mb-4 p-1 text-md text-cyan-600">{title}</legend>
                 {children}
                 <Comp

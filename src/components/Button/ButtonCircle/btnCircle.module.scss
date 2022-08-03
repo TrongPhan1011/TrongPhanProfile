@@ -1,6 +1,4 @@
 .tp-bg-circle {
-    height: 7.5vw;
-    width: 7.5vw;
     border-radius: 50%;
 }
 .textWhite {
@@ -9,8 +7,6 @@
 
 //teal
 .bd-btn-circle-teal {
-    height: 9vw;
-    width: 9vw;
     border-radius: 50%;
     border: 5px solid #00e5e5;
     &:hover {
@@ -34,8 +30,6 @@
 }
 
 .bd-btn-circle-danger {
-    height: 9vw;
-    width: 9vw;
     border-radius: 50%;
     border: 5px solid #eb0000;
     &:hover {
@@ -59,8 +53,6 @@
 }
 
 .bd-btn-circle-primary {
-    height: 9vw;
-    width: 9vw;
     border-radius: 50%;
     border: 5px solid #3693ff;
     &:hover {
@@ -85,8 +77,6 @@
 
 //warning
 .bd-btn-circle-warning {
-    height: 9vw;
-    width: 9vw;
     border-radius: 50%;
     border: 5px solid #ff7e35;
     &:hover {

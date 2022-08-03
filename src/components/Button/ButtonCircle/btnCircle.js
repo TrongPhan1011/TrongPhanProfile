@@ -26,12 +26,19 @@ function ButtonCircle({ children, className, type, to, href, onClick, bg = 'prim
         Comp = 'a';
     }
 
-    classNameDefault = cx('tp-bg-circle', 'flex justify-center items-center   text-3xl', bg, {
-        textWhite,
-    });
+    classNameDefault = cx(
+        'tp-bg-circle',
+        'flex justify-center items-center   text-3xl',
+        'lg:w-[7.5vw] lg:h-[7.5vw]',
+        'mobile-md:w-28 mobile-md:h-28 mobile-md:text-2xl',
+        bg,
+        {
+            textWhite,
+        },
+    );
 
     return (
-        <div className={cx('bd-btn-circle-' + bg, 'flex justify-center items-center')}>
+        <div className={cx('bd-btn-circle-' + bg, 'flex justify-center items-center', 'mobile-md:w-36 mobile-md:h-36')}>
             <Comp className={classNameDefault} {..._props}>
                 {children}
             </Comp>

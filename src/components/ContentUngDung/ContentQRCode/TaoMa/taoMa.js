@@ -56,39 +56,51 @@ function TaoMa({ title = '' }) {
     return (
         <>
             <div className={cx('flex  justify-center flex-col h-full p-6 pl-12 pr-12')}>
-                <div className={cx('w-1/6 flex flex-col self-center items-center ')}>
+                <div className={cx('w-1/6 flex flex-col self-center items-center ', 'mobile-md:w-3/6')}>
                     <p className={cx('tp-fw-600', 'text-center text-4xl')}>{title}</p>
                     <div className={cx('tp-line', 'flex self-center mt-4')}></div>
                 </div>
-                <div className={cx('flex w-full mt-4')}>
-                    <div className={cx('flex flex-col justify-between w-1/3 p-3')}>
-                        <InputText
-                            title="Nhập tiêu đề"
-                            onChange={(e) => {
-                                setTieuDe(e.target.value);
-                            }}
-                        />
-                        <InputText
-                            title="Nhập lời nhắn"
-                            onChange={(e) => {
-                                setLoiNhan(e.target.value);
-                            }}
-                        />
-                        <InputText
-                            title="Nhập thông điệp muốn chuyển"
-                            tag="textarea"
-                            height="text-area"
-                            onChange={(e) => {
-                                handleThongDiep(e.target.value);
-                            }}
-                        />
+                <div className={cx('flex w-full mt-4', 'mobile-md:flex-col mobile-md:items-center')}>
+                    <div className={cx('flex flex-col justify-between w-1/3 p-3', 'mobile-md:w-full ')}>
+                        <span className="mobile-md:hidden">
+                            <InputText
+                                title="Nhập tiêu đề"
+                                onChange={(e) => {
+                                    setTieuDe(e.target.value);
+                                }}
+                            />
+                        </span>
+                        <span className="mobile-md:hidden">
+                            <InputText
+                                title="Nhập lời nhắn"
+                                onChange={(e) => {
+                                    setLoiNhan(e.target.value);
+                                }}
+                            />
+                        </span>
+
+                        <span className="">
+                            <InputText
+                                title="Nhập thông điệp muốn chuyển"
+                                tag="textarea"
+                                height="text-area"
+                                onChange={(e) => {
+                                    handleThongDiep(e.target.value);
+                                }}
+                            />
+                        </span>
                     </div>
-                    <div className={cx('flex justify-between items-center flex-col w-1/3 pt-3 mb-7  pl-28 pr-28')}>
+                    <div
+                        className={cx(
+                            'flex justify-between items-center flex-col w-1/3 pt-3 mb-7  pl-28 pr-28',
+                            'mobile-md:pl-0 mobile-md:pr-0 mobile-md:w-2/3',
+                        )}
+                    >
                         <h4 className={cx('text-center')}>Mã của bạn</h4>
                         <img
                             src={debouceValueLinkThongDiep ? debouceValueLinkThongDiep : image}
                             alt="ma qr cua ban"
-                            className={cx('w-full')}
+                            className={cx('w-full', 'mobile-md:mt-3 mobile-md:mb-3')}
                         />
                         <Button
                             href={debouceValueLinkThongDiep}
@@ -101,7 +113,9 @@ function TaoMa({ title = '' }) {
                             Tải mã
                         </Button>
                     </div>
-                    <div className={cx('flex flex-col justify-between items-center w-1/3 p-3 pb-7')}>
+                    <div
+                        className={cx('flex flex-col justify-between items-center w-1/3 p-3 pb-7', 'mobile-md:hidden')}
+                    >
                         <div ref={imgAllRef} className={cx('tp-preview-qr', 'p-8 bg-white rounded-lg overflow-hidden')}>
                             <p className={cx('tp-fw-600', 'text-3xl text-center ')}>{debouceValueTieuDe}</p>
                             <p className={cx('', 'text-md mt-3 italic  text-center ')}>{debouceValueLoiNhan}</p>

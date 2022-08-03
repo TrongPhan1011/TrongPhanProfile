@@ -51,7 +51,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className={cx('', ' flex ', 'sm:h-[60vh] lg:h-screen md:h-screen mobile-md:p-6')}>
+            <div className={cx('', ' flex ', 'sm:h-screen lg:h-screen md:h-screen mobile-md:h-[80vh] mobile-md:p-6')}>
                 <div
                     className={cx(
                         '',
@@ -81,11 +81,18 @@ function Home() {
                     className={cx(
                         '',
                         ' flex  items-center',
-                        'lg:w-2/5  sm:w-1/2  md:justify-center ',
+                        'lg:w-2/5  sm:w-1/2  md:justify-center  ',
                         'mobile-md:h-full mobile-md:leading-[1.7rem] ',
                     )}
                 >
-                    <div className={cx('', 'flex flex-col  ', 'md:w-3/4 sm:w-5/6', 'mobile-md:h-full mobile-md:p-6')}>
+                    <div
+                        className={cx(
+                            '',
+                            'flex flex-col  ',
+                            'md:w-3/4 sm:w-5/6',
+                            'mobile-md:h-full mobile-md:p-6 mobile-md:justify-center',
+                        )}
+                    >
                         <h1
                             className={cx(
                                 'tp-text-title',
@@ -96,13 +103,13 @@ function Home() {
                         >
                             Giới thiệu về trang web
                         </h1>
-                        <div className={cx('tp-line', 'flex self-center mt-5', 'mobile-md:mt-2 mobile-md:w-24')}></div>
+                        <div className={cx('tp-line', 'flex self-center mt-5', 'mobile-md:4 mobile-md:w-24')}></div>
                         <div
                             className={cx(
                                 '',
                                 'mt-10 text-center',
                                 'md:text-2xl sm:text-2xl sm:leading-[1.5rem]',
-                                'mobile-md:mt-4 mobile-md:text-2xl sm:text-2xl lg:text-3xl',
+                                'mobile-md:mt-4 mobile-md:text-2xl sm:text-2xl lg:text-3xl ',
                             )}
                         >
                             <p>
@@ -142,7 +149,7 @@ function Home() {
                         >
                             Ứng dụng
                         </h1>
-                        <div className={cx('tp-line', 'flex self-center mt-5', 'mobile-md:mt-2')}></div>
+                        <div className={cx('tp-line', 'flex self-center mt-5', 'mobile-md:4')}></div>
                     </div>
                 </div>
                 <div
