@@ -1,6 +1,4 @@
 import classNames from 'classnames/bind';
-
-import Button from '~/components/Button';
 import ContentQRCode from '~/components/ContentUngDung/ContentQRCode';
 import styles from './QRCode.module.scss';
 
