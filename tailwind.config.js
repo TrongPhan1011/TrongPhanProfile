@@ -31,6 +31,9 @@ module.exports = {
             backgroundSize: {
                 'custom-100': '500px',
             },
+            colors: {
+                'white-opacity': 'rgba(255,255,255,0.8)',
+            },
         },
     },
 

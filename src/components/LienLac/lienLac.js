@@ -17,8 +17,8 @@ function LienLac() {
                     className={cx(
                         'tp-text-title',
                         'text-center  mt-16',
-                        'md:text-6xl sm:text-4xl sm:leading-[1.7rem] ',
-                        ' mobile-md:leading-[1.6rem] mobile-md:text-3xl mobile-md:mt-6',
+                        'md:text-6xl sm:text-5xl sm:leading-[1.7rem] ',
+                        ' mobile-md:leading-[3rem] mobile-md:text-4xl mobile-md:mt-6',
                     )}
                 >
                     Liên hệ
@@ -44,7 +44,10 @@ function LienLac() {
                 >
                     <a
                         href={config.linkConfig.facebook}
-                        className={cx('underline-offset-2 underline text-blue-700', 'md:text-4xl sm:text-2xl')}
+                        className={cx(
+                            'underline-offset-2 underline text-blue-700',
+                            'md:text-4xl sm:text-3xl mobile-md:text-2xl',
+                        )}
                         target="_blanks"
                     >
                         Trọng Phan
@@ -70,10 +73,12 @@ function LienLac() {
                     className={cx(
                         '',
                         'flex flex-col justify-center items-center  h-full w-3/4 text-4xl',
-                        'sm:pb-10 md:pb-0 mobile-md:text-xl',
+                        'sm:pb-10 md:pb-0  mobile-md:text-xl',
                     )}
                 >
-                    <div className={cx(' text-green-500', 'md:text-4xl sm:text-2xl ')}>{config.linkConfig.sdt}</div>
+                    <div className={cx(' text-green-500', 'md:text-4xl sm:text-3xl mobile-md:text-2xl ')}>
+                        {config.linkConfig.sdt}
+                    </div>
                     <div className={cx('', 'mt-3 w-full border-t-4 h-1/4 border-green-500 rounded-r-md ')}></div>
                 </div>
             </div>
@@ -96,7 +101,10 @@ function LienLac() {
                 >
                     <a
                         href={config.linkConfig.git}
-                        className={cx('underline-offset-2 underline  text-black', 'md:text-4xl sm:text-2xl')}
+                        className={cx(
+                            'underline-offset-2 underline  text-black',
+                            'md:text-4xl sm:text-3xl mobile-md:text-2xl',
+                        )}
                         target="_blanks"
                     >
                         TrongPhan1011
@@ -119,7 +127,9 @@ function LienLac() {
                         'sm:pb-10 md:pb-0 mobile-md:text-xl',
                     )}
                 >
-                    <div className={cx(' text-red-500', 'md:text-4xl sm:text-2xl')}>{config.linkConfig.mail}</div>
+                    <div className={cx(' text-red-500', 'md:text-4xl sm:text-3xl mobile-md:text-2xl')}>
+                        {config.linkConfig.mail}
+                    </div>
                     <div className={cx('', 'mt-3 w-full border-t-4 h-1/4 border-red-500 rounded-r-md ')}></div>
                 </div>
             </div>

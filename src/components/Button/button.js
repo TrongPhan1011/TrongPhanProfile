@@ -31,7 +31,7 @@ function Button({ children, className, type, to, href, onClick, ...passProps }) 
         classNameDefault = cx(
             className,
             'flex items-center ',
-            'md:p-4 sm:p-3 mobile-md:p-2 md:text-2xl sm:text-xl mobile-md:text-xl mobile-md:text-center',
+            'md:p-4 sm:p-3 mobile-md:p-2 md:text-2xl sm:text-2xl mobile-md:text-2xl mobile-md:text-center',
         );
     }
     return (

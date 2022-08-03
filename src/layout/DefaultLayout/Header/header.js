@@ -18,10 +18,10 @@ function Header() {
                     'text-logo',
                     'text-gradient tp-font-logo ',
                     ' flex justify-center w-1/5 bg-slate-50 text-6xl',
-                    'sm:pl-28 mobile-md:pl-6 mobile-md:h-14  mobile-md:text-4xl',
+                    'sm:pl-28 mobile-md:pl-6 mobile-md:h-14 ',
                 )}
             >
-                TP
+                <span className=" mobile-md:text-5xl sm:text-6xl md:text-6xl lg:sm:text-6xl">TP</span>
             </Button>
             <div className={cx('', 'w-4/5 flex justify-end ', 'sm:pr-28 mobile-md:pr-3 ')}>
                 <Button
@@ -42,19 +42,19 @@ function Header() {
 
                 <Menu
                     as="div"
-                    className=" relative inline-block text-left sm:text-xl md:text-2xl mobile-md:text-xl mobile-md:w-20"
+                    className=" relative inline-block text-left sm:text-2xl md:text-2xl mobile-md:text-2xl mobile-md:w-20"
                 >
                     <div>
                         <Menu.Button
                             className={cx(
                                 'tp-link-hover',
                                 'inline-flex items-center text-white  ',
-                                'sm:p-5 mobile-md:p-2 ',
+                                'sm:p-4 mobile-md:p-4 ',
                             )}
                         >
                             Ứng dụng
                             <ChevronDownIcon
-                                className="flex self-center items-center mr-1 ml-2  md:w-8 sm:w-6 mobile-md:w-5 md:h-8 sm:h-6 mobile-md:h-5"
+                                className="flex self-center items-center mr-1 ml-2  md:w-8 sm:w-6 mobile-md:w-6 md:h-8 sm:h-6 mobile-md:h-6"
                                 aria-hidden="true"
                             />
                         </Menu.Button>
