@@ -226,7 +226,13 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className={cx('', ' flex relative items-center', 'lg:h-screen md:h-custom-550 sm:h-custom-350')}>
+            <div
+                className={cx(
+                    '',
+                    ' flex relative items-center',
+                    'lg:h-screen md:h-custom-550 sm:h-custom-350 mobile-md:h-custom-300',
+                )}
+            >
                 <div className={cx('', 'h-full ', 'w-3/5 ')}>
                     <div className={cx(' flex flex-col justify-center w-4/5 h-full', 'lg:p-4 md:p-10')}>
                         <LienLac />
@@ -243,7 +249,7 @@ function Home() {
                 className={cx(
                     'tp-bg-footer',
                     'bg-fixed ',
-                    'lg:h-screen md:h-custom-550 sm:h-custom-350 lg:bg-cover md:bg-[length:100%_100%] md:bg-top',
+                    'lg:h-screen md:h-custom-550 sm:h-custom-350 lg:bg-cover md:bg-[length:100%_100%] md:bg-top mobile-md:h-custom-300',
                 )}
             >
                 <div className={cx('', 'flex justify-center items-end h-2/3 w-full')}>
@@ -251,7 +257,7 @@ function Home() {
                         to={config.routeConfig.gioiThieu}
                         className={cx(
                             'tp-btn-gradient tp-font-logo',
-                            'flex justify-center items-center text-4xl  p-8 w-2/12 rounded-md',
+                            'flex justify-center items-center text-4xl text-center  p-8 w-2/12 rounded-md',
                         )}
                     >
                         Trọng Phan
