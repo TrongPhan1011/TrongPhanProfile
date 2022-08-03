@@ -3,7 +3,35 @@ module.exports = {
     content: ['./src/**/*.{js,jsx,ts,tsx}'],
 
     theme: {
-        extend: {},
+        extend: {
+            screens: {
+                'mobile-md': { min: '0px', max: '400px' },
+                'mobile-lg': { min: '401px', max: '600px' },
+                sm: '600px',
+                // => @media (min-width: 640px) { ... }
+
+                md: '768px',
+                // => @media (min-width: 768px) { ... }
+
+                lg: '1024px',
+                // => @media (min-width: 1024px) { ... }
+
+                xl: '1280px',
+                // => @media (min-width: 1280px) { ... }
+
+                '2xl': '1536px',
+                // => @media (min-width: 1536px) { ... }
+            },
+            height: {
+                'custom-300': '300px',
+                'custom-550': '550px',
+                'custom-350': '350px',
+                'screen-50': '50vh',
+            },
+            backgroundSize: {
+                'custom-100': '500px',
+            },
+        },
     },
 
     plugins: [require('daisyui')],

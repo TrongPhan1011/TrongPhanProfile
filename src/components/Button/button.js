@@ -10,7 +10,8 @@ function Button({ children, className, type, to, href, onClick, ...passProps }) 
     let classNameDefault = cx(
         'tp-bg-dark',
         'btn-hover',
-        'flex items-center h-16 py-9 p-5 ml-2  border-cyan-500  border rounded-lg  active:bg-black',
+        'flex items-center h-16  ml-2  border-cyan-500  border rounded-lg  active:bg-black',
+        'mobile-md:h-6 mobile-md:p-3 mobile-md:py-6 sm:py-9 sm:p-5',
     );
     const _props = {
         onClick,
@@ -27,7 +28,11 @@ function Button({ children, className, type, to, href, onClick, ...passProps }) 
         Comp = 'a';
     }
     if (className) {
-        classNameDefault = className;
+        classNameDefault = cx(
+            className,
+            'flex items-center ',
+            'md:p-4 sm:p-3 mobile-md:p-2 md:text-2xl sm:text-xl mobile-md:text-xl',
+        );
     }
     return (
         <Comp className={classNameDefault} {..._props}>

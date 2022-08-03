@@ -63,9 +63,11 @@ function Search() {
     };
 
     return (
-        <div className={cx('', 'flex justify-center items-center h-1/2 w-full')}>
+        <div
+            className={cx('', 'flex justify-center items-center  w-full', 'lg:h-1/2 md:h-1/3 sm:h-1/2 mobile-md:h-2/3')}
+        >
             <Tippy
-                maxWidth={500}
+                maxWidth={600}
                 interactive
                 placement="bottom"
                 visible={showSearch && searchResult.length > 0}
@@ -75,7 +77,9 @@ function Search() {
                 <input
                     className={cx(
                         'tp-bg-light tp-input',
-                        'h-8 p-9 w-1/3 rounded-md  text-gray-900 border-cyan-500 border  focus:bg-white',
+                        '   rounded-md  text-gray-900 border-cyan-500 border  focus:bg-white',
+                        'sm:text-xl md:text-2xl mobile-md:text-xl sm:h-8 mobile-md:h-6 sm:w-1/3 mobile-md:w-1/2',
+                        'sm:p-9 mobile-md:p-6',
                     )}
                     placeholder="Nhập thông tin tìm kiếm...."
                     onChange={(e) => setSearchValue(e.target.value)}
@@ -86,7 +90,7 @@ function Search() {
             </Tippy>
             <Button type="button">
                 <ArrowCircleRightIcon
-                    className={cx('tp-text-cyan', 'flex self-center  h-12 w-12 ')}
+                    className={cx('tp-text-cyan', 'flex self-center   w-12 ', 'mobile-md:h-9  sm:h-12')}
                     aria-hidden="true"
                 />
             </Button>

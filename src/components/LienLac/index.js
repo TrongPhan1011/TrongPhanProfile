@@ -1,1 +1,1 @@
-export { default } from './lienLac';
+export { default } from './LienLac';

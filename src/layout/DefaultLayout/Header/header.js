@@ -11,29 +11,49 @@ import config from '~/config';
 const cx = classNames.bind(styles);
 function Header() {
     return (
-        <div className={cx('tp-bg-header', 'flex justify-around items-center h-20 w-full fixed z-10')}>
+        <div className={cx('tp-bg-header', 'flex justify-around items-center h-20 w-full fixed z-10', '')}>
             <Button
                 to={config.routeConfig.home}
-                className={cx('text-logo', 'text-gradient tp-font-logo', ' flex w-1/5 bg-slate-50 pl-28')}
+                className={cx(
+                    'text-logo',
+                    'text-gradient tp-font-logo ',
+                    ' flex justify-center w-1/5 bg-slate-50 ',
+                    'sm:pl-28 mobile-md:pl-6 mobile-md:h-14',
+                )}
             >
                 TP
             </Button>
-            <div className={cx('', 'w-4/5 flex justify-end pr-20')}>
-                <Button to={config.routeConfig.home} className={cx('tp-link-hover', 'text-white  p-5 ')}>
+            <div className={cx('', 'w-4/5 flex justify-end ', 'sm:pr-28 mobile-md:pr-6 ')}>
+                <Button
+                    to={config.routeConfig.home}
+                    className={cx('tp-link-hover justify-center', ' text-white  p-5 ', '')}
+                >
                     Trang chủ
                 </Button>
-                <Button to={config.routeConfig.gioiThieu} className={cx('tp-link-hover', 'text-white  p-5 ')}>
+                <Button
+                    to={config.routeConfig.gioiThieu}
+                    className={cx('tp-link-hover justify-center', 'text-white  p-5 ')}
+                >
                     Giới thiệu
                 </Button>
                 {/* <Button to={config.routeConfig.sanPham} className={cx('tp-link-hover', 'text-white  p-5 ')}>
                     Sản phẩm
                 </Button> */}
 
-                <Menu as="div" className=" relative inline-block text-left">
+                <Menu as="div" className=" relative inline-block text-left sm:text-xl md:text-2xl mobile-md:text-xl ">
                     <div>
-                        <Menu.Button className={cx('tp-link-hover', 'inline-flex text-white  p-5 ')}>
+                        <Menu.Button
+                            className={cx(
+                                'tp-link-hover',
+                                'inline-flex items-center text-white  ',
+                                'sm:p-5 mobile-md:p-2 ',
+                            )}
+                        >
                             Ứng dụng
-                            <ChevronDownIcon className="flex self-center mr-1 ml-2 h-8 w-8" aria-hidden="true" />
+                            <ChevronDownIcon
+                                className="flex self-center items-center mr-1 ml-2  md:w-8 sm:w-6 mobile-md:w-5 md:h-8 sm:h-6 mobile-md:h-5"
+                                aria-hidden="true"
+                            />
                         </Menu.Button>
                     </div>
 
@@ -49,7 +69,8 @@ function Header() {
                         <Menu.Items
                             className={cx(
                                 'tp-bg-light',
-                                'origin-top-left absolute   w-80 right-0 rounded-sm shadow-lg  shadow-md ',
+                                'origin-top-left absolute   w-80 right-0 rounded-sm   shadow-md ',
+                                'mobile-md:mt-4 mobile-md:w-52',
                             )}
                         >
                             <div className="py-1">
