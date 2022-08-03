@@ -17,22 +17,22 @@ function Header() {
                 className={cx(
                     'text-logo',
                     'text-gradient tp-font-logo ',
-                    ' flex justify-center w-1/5 bg-slate-50 ',
-                    'sm:pl-28 mobile-md:pl-6 mobile-md:h-14',
+                    ' flex justify-center w-1/5 bg-slate-50 text-6xl',
+                    'sm:pl-28 mobile-md:pl-6 mobile-md:h-14  mobile-md:text-4xl',
                 )}
             >
                 TP
             </Button>
-            <div className={cx('', 'w-4/5 flex justify-end ', 'sm:pr-28 mobile-md:pr-6 ')}>
+            <div className={cx('', 'w-4/5 flex justify-end ', 'sm:pr-28 mobile-md:pr-3 ')}>
                 <Button
                     to={config.routeConfig.home}
-                    className={cx('tp-link-hover justify-center', ' text-white  p-5 ', '')}
+                    className={cx('tp-link-hover justify-center', ' text-white  p-5 ', 'mobile-md:w-20')}
                 >
                     Trang chủ
                 </Button>
                 <Button
                     to={config.routeConfig.gioiThieu}
-                    className={cx('tp-link-hover justify-center', 'text-white  p-5 ')}
+                    className={cx('tp-link-hover justify-center', 'text-white  p-5 ', 'mobile-md:w-20')}
                 >
                     Giới thiệu
                 </Button>
@@ -40,7 +40,10 @@ function Header() {
                     Sản phẩm
                 </Button> */}
 
-                <Menu as="div" className=" relative inline-block text-left sm:text-xl md:text-2xl mobile-md:text-xl ">
+                <Menu
+                    as="div"
+                    className=" relative inline-block text-left sm:text-xl md:text-2xl mobile-md:text-xl mobile-md:w-20"
+                >
                     <div>
                         <Menu.Button
                             className={cx(

@@ -64,7 +64,12 @@ function Search() {
 
     return (
         <div
-            className={cx('', 'flex justify-center items-center  w-full', 'lg:h-1/2 md:h-1/3 sm:h-1/2 mobile-md:h-2/3')}
+            className={cx(
+                '',
+                'flex justify-center items-center  w-full',
+                'lg:h-1/2 md:h-1/3 sm:h-1/2 mobile-md:h-1/2',
+                '',
+            )}
         >
             <Tippy
                 maxWidth={600}

@@ -21,7 +21,7 @@ function Home() {
                 className={cx(
                     'tp-bg-img',
                     'bg-fixed w-full',
-                    'lg:h-screen md:h-custom-550 sm:h-custom-350 mobile-md:h-custom-300 mobile-md:bg-[length:100%_300px]',
+                    'lg:h-screen md:h-custom-550 sm:h-custom-350 mobile-md:h-[300px]  mobile-md:bg-cover',
                 )}
             >
                 <Search />
