@@ -21,18 +21,24 @@ function Home() {
                 className={cx(
                     'tp-bg-img',
                     'bg-fixed w-full',
-                    'lg:h-screen md:h-custom-550 sm:h-custom-350 mobile-md:h-[300px]  mobile-md:bg-cover',
+                    'lg:h-screen md:h-custom-550 sm:h-custom-350 mobile-md:h-[300px] mobile-md:bg-[length:100%_100%] sm:bg-cover ',
                 )}
             >
                 <Search />
 
-                <div className={cx('', 'lg:h-1/2 md:h-2/3 sm:h-1/3 lg:mt-0 md:mt-20 ')}>
-                    <div className={cx('', ' flex justify-end', 'md:text-6xl sm:text-4xl')}>
+                <div className={cx('', 'lg:h-1/2 md:h-2/3 sm:h-1/3 lg:mt-0 md:mt-20 mobile-md:h-1/2')}>
+                    <div
+                        className={cx(
+                            '',
+                            ' flex justify-end',
+                            'md:text-6xl sm:text-4xl mobile-md:justify-center mobile-md:text-white',
+                        )}
+                    >
                         <p
                             className={cx(
                                 'tp-font-slogan',
                                 'w-2/3 mt-4 text-center ',
-                                'md:leading-[5rem] sm:leading-[3rem]',
+                                'md:leading-[5rem] sm:leading-[3rem] mobile-md:leading-[1.7rem]  mobile-md:rounded-lg',
                             )}
                         >
                             Xin<span className="text-cyan-500"> chào!</span> <br /> Tôi là{' '}
@@ -40,7 +46,7 @@ function Home() {
                             Chào mừng bạn đến với<span className="text-cyan-700"> Website của tôi.</span>{' '}
                         </p>
                     </div>
-                    <div className={cx('', 'flex justify-end mt-6')}>
+                    <div className={cx('', 'flex justify-end mt-6', 'mobile-md:justify-center')}>
                         <div className={cx('', 'flex justify-center w-2/3')}>
                             <Button
                                 to={config.routeConfig.gioiThieu}
@@ -56,8 +62,20 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className={cx('', ' flex', 'lg:h-screen md:h-custom-550 sm:h-custom-350')}>
-                <div className={cx('', 'h-full flex items-center  relative  p-2 pl-8', 'lg:w-3/5 md:w-2/5 sm:w-3/5')}>
+            <div
+                className={cx(
+                    '',
+                    ' flex',
+                    'lg:h-screen md:h-custom-550 sm:h-custom-350 mobile-md:h-custom-300 mobile-md:p-6',
+                )}
+            >
+                <div
+                    className={cx(
+                        '',
+                        'h-full flex items-center  relative  p-2 pl-8',
+                        'lg:w-3/5 md:w-2/5 sm:w-3/5 mobile-md:hidden',
+                    )}
+                >
                     <div
                         className={cx(
                             'border-black border-8 w-3/5 flex self-center absolute -z-10 -top-8 -left-1/4',
@@ -72,26 +90,41 @@ function Home() {
                         )}
                     ></div>
                 </div>
-                <div className={cx('', ' flex  items-center', 'lg:w-2/5 md:w-3/5 sm:w-1/2  md:justify-center')}>
-                    <div className={cx('', 'flex flex-col  ', 'md:w-3/4 sm:w-5/6')}>
+                <div
+                    className={cx(
+                        '',
+                        ' flex  items-center',
+                        'lg:w-2/5 md:w-3/5 sm:w-1/2  md:justify-center ',
+                        'mobile-md:h-full mobile-md:leading-[1.7rem] ',
+                    )}
+                >
+                    <div className={cx('', 'flex flex-col  ', 'md:w-3/4 sm:w-5/6', 'mobile-md:h-full')}>
                         <h1
                             className={cx(
                                 'tp-text-title',
                                 'text-center',
-                                'md:text-6xl sm:text-4xl md:leading-[5rem] sm:leading-[2.5rem]',
+                                'md:text-6xl sm:text-4xl md:leading-[5rem] sm:leading-[2.5rem] ',
+                                'mobile-md:leading-[1.7rem] mobile-md:text-3xl',
                             )}
                         >
                             Giới thiệu về trang web
                         </h1>
-                        <div className={cx('tp-line', 'flex self-center mt-5')}></div>
-                        <div className={cx('', 'mt-10 text-center', 'md:text-2xl sm:text-xl sm:leading-[1.5rem]')}>
+                        <div className={cx('tp-line', 'flex self-center mt-5', 'mobile-md:mt-0 mobile-md:w-24')}></div>
+                        <div
+                            className={cx(
+                                '',
+                                'mt-10 text-center',
+                                'md:text-2xl sm:text-xl sm:leading-[1.5rem]',
+                                'mobile-md:mt-4 mobile-md:text-xl',
+                            )}
+                        >
                             <p>
                                 <i>
                                     Đây là Website được tạo ra bởi Phan Hữu Trọng với mục đích tạo ra một sản phẩm cá
                                     nhân để giúp mọi người có thể biết về tôi hơn. <br />
                                 </i>
                             </p>
-                            <p className={cx('', 'mt-5 text-justify')}>
+                            <p className={cx('', 'mt-5 text-justify', 'mobile-md:mt-2')}>
                                 - Website sẽ có thông tin của cá nhân tôi ở mục Giới thiệu. <br />
                                 - Các sản phẩm đã làm từ trước tới nay của tôi ở mục Sản phẩm <br />- Các ứng dụng có
                                 thể hữu ích đối với bạn ở mục Ứng dụng như: Tạo mã QR, Nghe những bài nhạc được tôi chia
@@ -102,26 +135,41 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className={cx('tp-bg-ung-dung', ' bg-fixed w-full', 'lg:h-screen md:h-custom-550 sm:h-custom-350')}>
-                <div className={cx(' flex  justify-center h-1/4')}>
-                    <div className={cx('w-1/6 flex flex-col self-center items-center')}>
+            <div
+                className={cx(
+                    'tp-bg-ung-dung',
+                    ' bg-fixed w-full',
+                    'lg:h-screen md:h-custom-550 sm:h-custom-350',
+                    'mobile-md:p-3',
+                )}
+            >
+                <div className={cx(' flex  justify-center h-1/4', 'mobile-md:h-1/6')}>
+                    <div className={cx('w-1/6 flex flex-col self-center items-center ', 'mobile-md:w-1/3 ')}>
                         <h1
                             className={cx(
                                 'tp-text-title',
                                 'text-center text-white mt-16',
-                                'md:text-6xl sm:text-4xl sm:leading-[1.5rem]',
+                                'md:text-6xl sm:text-4xl sm:leading-[1.7rem] ',
+                                ' mobile-md::leading-[1.6rem] mobile-md:text-3xl',
                             )}
                         >
                             Ứng dụng
                         </h1>
-                        <div className={cx('tp-line', 'flex self-center mt-5')}></div>
+                        <div className={cx('tp-line', 'flex self-center mt-5', 'mobile-md:mt-2')}></div>
                     </div>
                 </div>
-                <div className={cx('flex justify-around h-3/4 ', 'md:mt-20 sm:mt-6')}>
+                <div
+                    className={cx(
+                        'flex justify-around h-3/4 ',
+                        'md:mt-20 sm:mt-6',
+                        'mobile-md:h-4/6 mobile-md:flex-col mobile-md:items-center  ',
+                    )}
+                >
                     <div
                         className={cx(
                             'flex justify-around flex-col items-center   p-5 bg-white rounded-md shadow-md  opacity-80 hover:opacity-90',
                             'lg:w-1/5 md:w-1/4 sm:w-1/4 md:h-3/5 sm:h-4/5',
+                            'mobile-md:h-64 mobile-md:w-2/5 mobile-md:mt-3',
                         )}
                     >
                         <img src={qrcode} alt="QR code" className={cx('h-2/3 w-3/4')} />
@@ -141,6 +189,7 @@ function Home() {
                             'tp-bg-nhac',
                             'flex justify-around flex-col items-center  p-5  rounded-md shadow-md  opacity-80 hover:opacity-90',
                             'lg:w-1/5 md:w-1/4 sm:w-1/4 md:h-3/5 sm:h-4/5',
+                            'mobile-md:h-64 mobile-md:w-2/5 mobile-md:mt-3',
                         )}
                     >
                         <img src={musicIcon} alt="QR code" className={cx('h-2/3 w-3/4')} />
@@ -160,6 +209,7 @@ function Home() {
                             'tp-bg-file',
                             'flex justify-around flex-col items-center   p-5  rounded-md shadow-md  opacity-80 hover:opacity-90',
                             'lg:w-1/5 md:w-1/4 sm:w-1/4 md:h-3/5 sm:h-4/5',
+                            'mobile-md:h-64 mobile-md:w-2/5 mobile-md:mt-3',
                         )}
                     >
                         <img src={tpFile} alt="QR code" className={cx('h-2/3 w-3/4')} />

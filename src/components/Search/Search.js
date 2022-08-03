@@ -83,7 +83,7 @@ function Search() {
                     className={cx(
                         'tp-bg-light tp-input',
                         '   rounded-md  text-gray-900 border-cyan-500 border  focus:bg-white',
-                        'sm:text-xl md:text-2xl mobile-md:text-xl sm:h-8 mobile-md:h-6 sm:w-1/3 mobile-md:w-1/2',
+                        'sm:text-xl md:text-2xl mobile-md:text-xl sm:h-8 mobile-md:h-6 sm:w-1/3 mobile-md:w-3/4',
                         'sm:p-9 mobile-md:p-6',
                     )}
                     placeholder="Nhập thông tin tìm kiếm...."
